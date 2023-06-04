@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #222222;
+    color: #FFFFFF;
+    font-size: 24px; /* Adjust the font size for page scaling */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #F06D06;
+  }
+  
+  .form-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #333333;
+    color: #FFFFFF;
+  }
+  
+  button {
+    padding: 5px 20px;
+    margin-left: 10px;
+    background-color: #F06D06;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 5px;
+  }
+  
+  li span {
+    flex-grow: 1;
+    color: #FFFFFF;
+  }
+  
+  li .edit-button,
+  li .delete-button {
+    margin: 0 5px;
+    background-color: #F06D06;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  li .edit-button i,
+  li .delete-button i {
+    color: #FFFFFF;
+  }
+  
+  li input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #DDDDDD;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  li input[type="checkbox"]:checked {
+    background-color: #F06D06;
+    border-color: #F06D06;
+  }
+  
+  li input[type="checkbox"]:checked::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+  
+  #completedList {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #F06D06;
+    margin: 10px 0;
+  }
+  
+  .section-count {
+    color: #FFFFFF;
+    margin-left: 5px;
+  }
